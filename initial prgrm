@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class Game
+{
+	public static void main(String[] args)
+	{
+		int choice;
+		 Scanner sc = new Scanner(System.in); {
+			System.out.println("MENU");
+			System.out.println("1.PLAY GAME");
+			System.out.println("2.INSTRUCTIONS");
+			System.out.println("3.EXIT");
+			System.out.println("ENTER YOUR CHOICE");
+			choice = sc.nextInt();
+		}
+		switch(choice){
+	case 1:playGame();
+	break;
+	case 2:instructGame();
+	break;
+	case 3:exitGame();
+	break;
+	default:System.out.println("select between 1 to 3");
+	}
+	}
+
+	private static void exitGame() {
+		// TODO Auto-generated method stub
+		System.out.println("THANK YOU");
+		
+	}
+
+	private static void instructGame() {
+		// TODO Auto-generated method stub
+		System.out.println("READ THE INSTRUCTIONS");
+		System.out.println("SELECT CHOICE 1 TO PLAY THE GAME");
+		System.out.println("ENTER A WORD");
+		System.out.println("YOU GET THE NUMBER OF LETTERS");
+		System.out.println("THANK YOU ");
+		System.out.println("ENTER YOUR CHOICE");
+		
+	}
+
+	private static void playGame() {		
+		
+	
+		
+		{
+			Scanner input = new Scanner(System.in);
+			System.out.println("WELCOME TO THE GAME");
+			System.out.println("ENTER A WORD");
+			String text =input.nextLine();
+			System.out.println(text +" has "+ text.length()+" letters");
+			
+		
+		}
+				
+		
+		
+	}
+	
+
+	}
+	
